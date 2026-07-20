@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arju Gaming Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #00ffcc;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .game-card {
+      background: #1e1e1e;
+      border: 1px solid #444;
+      border-radius: 8px;
+      margin: 10px;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+      border-color: #00ffcc;
+    }
+    button {
+      background: #00ffcc;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #009977;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Arju Gaming Hub</h1>
+    <p>Your portal to fun and adventure!</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Games</a>
+    <a href="#">Community</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="games">
+    <div class="game-card">
+      <h2>Space Invaders</h2>
+      <p>Classic arcade shooter.</p>
+      <button onclick="playGame('Space Invaders')">Play Now</button>
+    </div>
+    <div class="game-card">
+      <h2>Maze Runner</h2>
+      <p>Find your way out!</p>
+      <button onclick="playGame('Maze Runner')">Play Now</button>
+    </div>
+    <div class="game-card">
+      <h2>Battle Arena</h2>
+      <p>Multiplayer combat fun.</p>
+      <button onclick="playGame('Battle Arena')">Play Now</button>
+    </div>
+  </section>
+
+  <script>
+    function playGame(gameName) {
+      alert("Launching " + gameName + "...");
+      // Here you can redirect to actual game page or load game script
+    }
+  </script>
+</body>
+</html>
